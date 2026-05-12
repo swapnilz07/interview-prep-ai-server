@@ -228,8 +228,8 @@ export const refresh = async (req: Request, res: Response) => {
     // Set the new refresh token as an HTTP-only cookie (replace the old one)
     res.cookie("refreshToken", newRefreshToken, {
       httpOnly: true,
-      secure: env.NODE_ENV === "production",
-      sameSite: "strict",
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax", // 'none' for cross-origin
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
 
