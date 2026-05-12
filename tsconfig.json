@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",          // output folder
+    "rootDir": "./src",          // source folder
+    "module": "CommonJS",        // or "NodeNext"
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import { LoginInput, RegisterInput } from "../../shared/types/user.types";
-import userModel from "./user.model.ts";
+import userModel from "./user.model";
 import {
   decodeToken,
   generateAccessToken,
