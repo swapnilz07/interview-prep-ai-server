@@ -144,6 +144,7 @@ Candidate Resume: ${resumeText}
 Self Description: ${selfDescription}
 Job Description: ${jobDescription}
 
+Provide exactly 7 to 8 technical questions and 3 to 5 behavioral questions.
 Return ONLY the JSON object, no extra text.
 `;
 
